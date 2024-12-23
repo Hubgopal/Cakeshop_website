@@ -1,0 +1,429 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --bs-navbar-bg: #ffe4e1;
+  --bs-navbar-color: #112a46;
+  --bs-navbar-hover-color: #e91e63;
+  --bs-section-heading-color: #d81b60;
+  --bs-btn-bg: #f48fb1;
+  --bs-btn-hover-bg: #e91e63;
+  --bs-btn-border-color: #f48fb1;
+  --bs-card-bg: #fff8f0;
+  --bs-icon-color: #d81b60;
+  --bs-footer-bg: #f8f4e3;
+  --bs-footer-text-color: #3e3e3e;
+  --bs-footer-link-color: #f48fb1;
+  --bs-footer-icon-color: #d81b60;
+  --bs-shadow-color: rgba(216, 27, 96, 0.2);
+  --bs-hover-shadow-color: rgba(233, 30, 99, 0.4);
+}
+
+body {
+  background-color: var(--bs-section-bg);
+}
+
+.btn {
+  background-color: var(--bs-btn-bg);
+}
+
+.btn::after {
+  background-color: var(--bs-btn-hover-bg);
+}
+
+.box {
+  box-shadow: 0px 4px 8px var(--bs-shadow-color);
+}
+
+.box:hover {
+  box-shadow: 0px 8px 16px var(--bs-hover-shadow-color);
+}
+
+.navbar {
+  padding: 10px 20px;
+  background-color: var(--bs-navbar-bg);
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  align-items: center;
+  text-decoration: none;
+  color: var(--bs-navbar-color);
+}
+
+.navbar .navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--bs-navbar-color);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--bs-navbar-hover-color);
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link {
+  color: var(--bs-navbar-toggler-icon-bg);
+}
+
+.navbar .d-flex .search-bar {
+  position: relative;
+}
+
+.navbar .d-flex .search-bar input {
+  width: 250px;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+.navbar .d-flex .search-bar i {
+  top: 50%;
+  right: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+  color: var(--bs-navbar-color);
+}
+
+.navbar .d-flex .fa-shopping-cart,
+.fa-user {
+  font-size: 24px;
+  color: var(--bs-navbar-color);
+}
+
+.navbar .d-flex img {
+  cursor: pointer;
+  border-radius: 50%;
+}
+/* ***************************************************** */
+/*********************** Hero section *******************/
+/* *****************************************************/
+
+.hero-section {
+  height: auto;
+  display: flex;
+  color: #333;
+  overflow-x: hidden;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro {
+  padding: 100px;
+  background: url("images/hero1.jpg") no-repeat center center/cover;
+}
+.intro h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: "Pacifico", cursive;
+}
+
+.intro p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.intro .btn {
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: var(--bs-btn-bg);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.intro .btn:hover {
+  background-color: var(--bs-btn-hover-bg);
+}
+
+.features {
+  padding: 50px 20px;
+}
+
+.feature {
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: var(--bs-icon-color);
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+}
+
+.call-to-action {
+  padding: 40px;
+  color: #333;
+  border-radius: 10px;
+}
+
+.call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.call-to-action .btn {
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: var(--bs-btn-bg);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.call-to-action .btn:hover {
+  background-color: var(--bs-btn-hover-bg);
+}
+/* *********************************************************** */
+/********************* product section ************************/
+/* ********************************************************** */
+.product-card {
+  width: 300px;
+  border: none;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ourdel {
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  color: var(--bs-section-heading-color);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  text-align: center;
+  padding: 15px;
+}
+
+.product-card .product-title {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product-card .product-price {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--primary-text-color);
+}
+
+.product-card .product-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card .btn {
+  border: none;
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: var(--bs-btn-bg);
+}
+
+.product-card .btn:hover {
+  background-color: var(--bs-btn-hover-bg);
+}
+
+/* *********************************************************** */
+/* ***************** about section start ********************* */
+/* *********************************************************** */
+
+#about {
+  width: 100%;
+  padding: 50px 50px;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  font-family: "Pacifico", cursive;
+  color: var(--bs-section-heading-color);
+}
+
+#about p.lead {
+  font-size: 1.2rem;
+}
+
+.card {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image-wrapper {
+  height: 200px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image-wrapper img {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: var(--primary-text-color);
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* ******************************************************* */
+/* **************** Testimonials section ***************** */
+/* ******************************************************* */
+#testimonials {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#testimonials h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Pacifico", cursive;
+  color: var(--bs-section-heading-color);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  padding: 30px;
+  border-radius: 12px;
+  background: #ffffff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-avatar img {
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  border: 4px solid var(--bs-btn-border-color);
+}
+
+.testimonial-avatar img:hover {
+  transform: rotate(10deg);
+}
+
+.card-text i {
+  font-size: 30px;
+  color: var(--bs-icon-color);
+}
+
+.card-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.card-body h5 {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card-body p {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #8e8e8e;
+}
+.text-muted {
+  font-size: 0.9rem;
+}
+
+#offers .container h2 {
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  color: var(--bs-section-heading-color);
+}
+.cusname {
+  color: var(--bs-icon-color);
+}
+.gallery img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#gallery .container h2 {
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  color: var(--bs-section-heading-color);
+}
+#contact h2 {
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  color: var(--bs-section-heading-color);
+}
+footer {
+  padding: 20px;
+  color: var(--bs-footer-text-color);
+  background-color: var(--bs-footer-bg);
+}
+.footer-links a {
+  text-decoration: none;
+  text-decoration: none;
+  color: var(--bs-footer-icon-color);
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
