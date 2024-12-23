@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <title>Cake Shop</title>
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <section class="navbar-section">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <!-- Left: Logo -->
+          <a class="navbar-brand" href="#">
+            <span>Cake Shop</span>
+          </a>
+
+          <!-- Center: Main Navigation -->
+          <div class="collapse navbar-collapse justify-content-center"
+            id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Product">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#offers">Special Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Search Bar, Shopping, and User Icons -->
+          <div class="d-flex align-items-center">
+            <!-- Search Bar -->
+            <div class="search-bar">
+              <input type="text" class="form-control"
+                placeholder="Search cakes...">
+              <i class="fa fa-search"></i>
+            </div>
+
+            <!-- Shopping Cart -->
+            <button type="button" class="btn position-relative"
+              style="background: transparent;border: none;"><i
+                class="fa fa-shopping-cart"
+                style="font-size: 20px;"></i>
+              <span
+                class="position-absolute top-20 start-90 translate-middle badge rounded bg-danger">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+
+            <!-- User Profile -->
+            <a href="#" class="ms-3">
+              <i class="fa-solid fa-user"
+                style="font-size: 20px;"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <div class="hero-section">
+      <!-- Hero Section (Intro) -->
+      <div class="intro text-center">
+        <h1>Welcome to Sweet Delights</h1>
+        <p>Discover our delicious cakes made with love and the finest
+          ingredients!</p>
+        <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+      </div>
+
+      <!-- Features Section -->
+      <div class="features row text-center justify-content-center">
+        <div class="col-12 col-md-4 mb-4">
+          <div class="feature box">
+            <i class="fa-solid fa-cake-candles"></i>
+            <h3>Fresh Cakes</h3>
+            <p>Delicious cakes made fresh every day, just for you!</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <div class="feature box">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Handmade with Love</h3>
+            <p>Every cake is crafted with love for your special moments!</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <div class="feature box">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Fast Delivery</h3>
+            <p>Get your cakes delivered right to your door, fast and fresh!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="call-to-action text-center">
+        <h2>Order Your Favorite Cake Today!</h2>
+        <a href="#" class="btn btn-primary btn-lg">Explore Our
+          Cakes</a>
+      </div>
+    </div>
+
+    <!-- ***************************************************** -->
+    <!--***************** Product Section ******************** -->
+    <!-- ***************************************************** -->
+
+    <div class="container py-5" id="Product">
+      <h2 class="text-center mb-5 ourdel">Our Delicious Cakes</h2>
+      <div class="row g-4 justify-content-center" style="gap: 10px;">
+
+        <!-- Card 1 -->
+        <div class="col-auto">
+          <div class="product-card box">
+            <img src="style/images/chocolate.jpg" alt="Chocolate Cake">
+            <div class="card-body">
+              <h5 class="product-title">Chocolate Cake</h5>
+              <p class="product-price">$15.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-outline-danger">❤</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-auto">
+          <div class="product-card box">
+            <img src="style/images/vanillacake.jpg" alt="Vanilla Cake">
+            <div class="card-body">
+              <h5 class="product-title">Vanilla Cake</h5>
+              <p class="product-price">$12.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-outline-danger">❤</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-auto">
+          <div class="product-card box">
+            <img src="style/images/fruitscake.jpg" alt="Fruit Cake">
+            <div class="card-body">
+              <h5 class="product-title">Fruit Cake</h5>
+              <p class="product-price">$18.49</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-outline-danger">❤</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-auto">
+          <div class="product-card box">
+            <img src="style/images/cupcake.jpg" alt="Cupcakes">
+            <div class="card-body">
+              <h5 class="product-title">Cupcakes</h5>
+              <p class="product-price">$9.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-outline-danger">❤</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-auto">
+          <div class="product-card box">
+            <img src="style/images/vanillacake1.jpg" alt="Vanilla Cake">
+            <div class="card-body">
+              <h5 class="product-title">Vanilla Cake</h5>
+              <p class="product-price">$12.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-outline-danger">❤</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-auto">
+          <div class="product-card box">
+            <img src="style/images/cupcake1.jpg" alt="Cupcakes">
+            <div class="card-body">
+              <h5 class="product-title">Cupcakes</h5>
+              <p class="product-price">$9.99</p>
+              <div class="product-actions">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-outline-danger">❤</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ***************************************************** -->
+    <!--***************** About Section ******************** -->
+    <!-- ***************************************************** -->
+    <section id="about" class="container py-5">
+      <h2 class="text-center mb-4 fw-bold">About Us</h2>
+      <p class="text-center text-muted lead">
+        Our bakery specializes in creating delightful cakes for all occasions.
+        We use the finest ingredients to craft unique flavors and designs. Our
+        mission is to make every celebration sweeter!
+      </p>
+
+      <div class="row text-center justify-content-evenly mt-5">
+        <!-- Team Image -->
+        <div class="col-md-6 mb-4 mb-md-0" style="width:400px;">
+          <div class="card border-0 box">
+            <div class="image-wrapper">
+              <img src="style/images/about1.jpg" class="card-img-top rounded"
+                alt="Team">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Our Dedicated
+                Team</h5>
+              <p class="card-text text-muted">
+                A passionate team of bakers and designers committed to crafting
+                the best cakes for your special moments.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bakery Image -->
+        <div class="col-md-6" style="width:400px;">
+          <div class="card border-0 box">
+            <div class="image-wrapper">
+              <img src="style/images/about2.jpg" class="card-img-top rounded"
+                alt="Bakery">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title  fw-bold">Our Creative
+                Bakery</h5>
+              <p class="card-text text-muted">
+                A modern and innovative bakery equipped with state-of-the-art
+                tools to ensure the highest quality cakes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***************************************************** -->
+    <!--***************** Special Offers Section ******************** -->
+    <!-- ***************************************************** -->
+
+    <section id="offers" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Special Offers</h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="card box">
+              <img src="style/images/offeres1.jpg" class="card-img-top"
+                alt="Offer">
+              <div class="card-body">
+                <h5 class="card-title">Buy 1 Get 1 Free</h5>
+                <p class="card-text">On all chocolate cakes this weekend.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card box">
+              <img src="style/images/offeres2.jpg" class="card-img-top"
+                alt="Offer">
+              <div class="card-body">
+                <h5 class="card-title">10% Off</h5>
+                <p class="card-text">For first-time online orders.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card box">
+              <img src="style/images/offeres3.jpg" class="card-img-top"
+                alt="Offer">
+              <div class="card-body">
+                <h5 class="card-title">New Year Special Offers</h5>
+                <p class="card-text">Get a free 50% Discount</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***************************************************** -->
+    <!--***************** Testimonial Section ******************** -->
+    <!-- ***************************************************** -->
+
+    <section id="testimonials" class="container py-5">
+      <h2 class="text-center mb-5 fw-bold">What Our Customers
+        Say</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Testimonial 1 -->
+        <div class="col">
+          <div class="card border-0 box h-100">
+            <div class="testimonial-avatar mb-4"
+              style="display: flex;justify-content: center;">
+              <img src="style/images/staf1.jpg" class="rounded-circle" alt="Jane Doe"
+                width="100" height="100">
+            </div>
+            <div class="card-body text-center">
+              <p class="card-text text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "The best cakes I've ever had! Thank you for making my party so special."
+              </p>
+              <h5 class="fw-bold mt-3 cusname">Jane Doe</h5>
+              <p class="text-muted">Satisfied Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col">
+          <div class="card border-0 box h-100">
+            <div class="testimonial-avatar mb-4"
+              style="display: flex;justify-content: center;">
+              <img src="style/images/staf2.jpg" class="rounded-circle"
+                alt="John Smith" width="100" height="100">
+            </div>
+            <div class="card-body text-center">
+              <p class="card-text text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "Amazing service and even better cakes. Highly recommend!"
+              </p>
+              <h5 class="fw-bold mt-3 cusname">John Smith</h5>
+              <p class="text-muted">Loyal Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col">
+          <div class="card border-0 box h-100">
+            <div class="testimonial-avatar mb-4"
+              style="display: flex;justify-content: center;">
+              <img src="style/images/staf3.jpg" class="rounded-circle" alt="Sarah Lee"
+                width="100" height="100">
+            </div>
+            <div class="card-body text-center">
+              <p class="card-text text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                "Beautiful designs and delicious flavors. Simply perfect."
+              </p>
+              <h5 class="fw-bold mt-3 cusname">Sarah Lee</h5>
+              <p class="text-muted">Happy Client</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***************************************************** -->
+    <!--***************** Gallery Section ******************** -->
+    <!-- ***************************************************** -->
+
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Gallery</h2>
+        <div class="row mt-4">
+          <div class="col-md-3">
+            <img src="style/images/cake-gallery1.jpg" class="img-fluid rounded "
+              alt="Cake">
+          </div>
+          <div class="col-md-3">
+            <img src="style/images/cake-gallery2.jpg" class="img-fluid rounded"
+              alt="Cake">
+          </div>
+          <div class="col-md-3">
+            <img src="style/images/cake-gallery3.jpg" class="img-fluid rounded"
+              alt="Cake">
+          </div>
+          <div class="col-md-3">
+            <img src="style/images/cake-gallery4.jpg" class="img-fluid rounded"
+              alt="Cake">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***************************************************** -->
+    <!--***************** Contact us Section ******************** -->
+    <!-- ***************************************************** -->
+    <section id="contact" class="container py-5">
+      <h2 class="text-center">Contact Us</h2>
+      <form class="mt-4">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name"
+            placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email"
+            placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3"
+            placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <!-- ***************************************************** -->
+    <!--***************** Footer Section ******************** -->
+    <!-- ***************************************************** -->
+    <footer class="bg-dark text-light pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Cake Shop</h5>
+            <p>We create delightful cakes for every occasion. Visit us to
+              sweeten your moments with our handmade and fresh cakes.</p>
+            <ul class="list-unstyled social-links">
+              <li class="d-inline me-2">
+                <a href="#" class="text-light"><i
+                    class="fab fa-facebook"></i></a>
+              </li>
+              <li class="d-inline me-2">
+                <a href="#" class="text-light"><i
+                    class="fab fa-instagram"></i></a>
+              </li>
+              <li class="d-inline">
+                <a href="#" class="text-light"><i
+                    class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="text-light">About Us</a></li>
+              <li><a href="#offers" class="text-light">Special Offers</a></li>
+              <li><a href="#gallery" class="text-light">Gallery</a></li>
+              <li><a href="#contact" class="text-light">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p><i class="fas fa-map-marker-alt me-2"></i>123 Cake Street, Sweet
+              City</p>
+            <p><i class="fas fa-phone me-2"></i>(123) 456-7890</p>
+            <p><i class="fas fa-envelope me-2"></i>info@cakeshop.com</p>
+          </div>
+        </div>
+        <hr class="bg-light">
+        <div class="text-center py-3">
+          <p class="mb-0">© 2024 Cake Shop. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Add Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
